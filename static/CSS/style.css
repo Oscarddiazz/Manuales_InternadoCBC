@@ -1,0 +1,64 @@
+/* Estilos personalizados para Manuales CBC */
+
+/* Efectos de backdrop blur mejorados */
+.backdrop-blur-sm {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Transiciones suaves para elementos interactivos */
+.transition-colors {
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+/* Efectos hover mejorados para botones */
+button:hover,
+a:hover {
+  transform: translateY(-1px);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Sombras suaves para cards */
+.bg-white\/60 {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Animaciones para elementos de carga */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Estilos para código */
+code {
+  font-family: "Courier New", monospace;
+  font-size: 0.875rem;
+}
+
+/* Mejoras de accesibilidad */
+a:focus,
+button:focus {
+  outline: 2px solid #10b981;
+  outline-offset: 2px;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .hidden.md\:flex {
+    display: none;
+  }
+
+  .text-4xl.md\:text-6xl {
+    font-size: 2.5rem;
+  }
+}
