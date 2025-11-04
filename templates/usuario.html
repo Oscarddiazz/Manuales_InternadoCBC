@@ -50,78 +50,86 @@
     </header>
 
     <!-- Main Content -->
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="space-y-8">
-            <div class="text-center space-y-4">
-                <h1 class="text-4xl font-bold text-slate-800">Manual de Usuario</h1>
-                <p class="text-xl text-slate-600">Guía completa para el uso del Software InternadoCBC</p>
-            </div>
+    <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual de Usuario - SENA CBC</title>
+  <link rel="stylesheet" href="../static/CSS/usuario.css">
+</head>
 
-            <div class="bg-white/60 backdrop-blur-sm border border-emerald-100 rounded-xl p-8 space-y-6">
-                <h2 class="text-2xl font-semibold text-slate-800">Primeros Pasos</h2>
-                <div class="space-y-4">
-                    <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0 w-8 h-8 bg-emerald-600 text-white rounded-full flex items-center justify-center font-semibold">1</div>
-                        <div>
-                            <h3 class="text-lg font-medium text-slate-700">Acceso al Sistema</h3>
-                            <p class="text-slate-600">Ingresa con tus credenciales proporcionadas por el administrador del sistema.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0 w-8 h-8 bg-emerald-600 text-white rounded-full flex items-center justify-center font-semibold">2</div>
-                        <div>
-                            <h3 class="text-lg font-medium text-slate-700">Panel Principal</h3>
-                            <p class="text-slate-600">Familiarízate con el panel principal y las opciones de navegación disponibles.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0 w-8 h-8 bg-emerald-600 text-white rounded-full flex items-center justify-center font-semibold">3</div>
-                        <div>
-                            <h3 class="text-lg font-medium text-slate-700">Configuración de Perfil</h3>
-                            <p class="text-slate-600">Configura tu perfil de usuario y preferencias del sistema.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<body class="bg-gray-100 font-sans">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <button class="back-btn" id="backBtn">← Volver al Inicio</button>
+      <h1 class="header-title">Manual de Usuario</h1>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </div>
+  </header>
 
-            <div class="bg-white/60 backdrop-blur-sm border border-emerald-100 rounded-xl p-8 space-y-6">
-                <h2 class="text-2xl font-semibold text-slate-800">Funcionalidades Principales</h2>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="space-y-3">
-                        <h3 class="text-lg font-medium text-slate-700">Gestión de Pacientes</h3>
-                        <ul class="space-y-2 text-slate-600">
-                            <li>• Registro de nuevos pacientes</li>
-                            <li>• Consulta de historiales médicos</li>
-                            <li>• Actualización de datos</li>
-                            <li>• Generación de reportes</li>
-                        </ul>
-                    </div>
-                    <div class="space-y-3">
-                        <h3 class="text-lg font-medium text-slate-700">Administración</h3>
-                        <ul class="space-y-2 text-slate-600">
-                            <li>• Control de camas y habitaciones</li>
-                            <li>• Programación de turnos</li>
-                            <li>• Gestión de inventario</li>
-                            <li>• Reportes administrativos</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <div class="container">
+    <!-- Sección 1 -->
+    <div class="section-card" data-section="1">
+      <h2 class="section-title">1. Introducción</h2>
+      <div class="image-container">
+        <img src="../static/img/inicio1.png" alt="Captura de pantalla inicial" class="manual-image">
+      </div>
+      <p class="section-content">
+        Bienvenido al manual de usuario del Software de Gestión Automatizada para el Internado del Centro Biotecnológico
+        del Caribe (CBC).
+        Esta aplicación móvil ha sido diseñada específicamente para optimizar y facilitar la gestión de los procesos
+        administrativos del internado.
+      </p>
+    </div>
 
-            <div class="bg-white/60 backdrop-blur-sm border border-emerald-100 rounded-xl p-8 space-y-6">
-                <h2 class="text-2xl font-semibold text-slate-800">Preguntas Frecuentes</h2>
-                <div class="space-y-4">
-                    <div class="border-l-4 border-emerald-500 pl-4">
-                        <h3 class="text-lg font-medium text-slate-700">¿Cómo recupero mi contraseña?</h3>
-                        <p class="text-slate-600 mt-2">Contacta al administrador del sistema para restablecer tu contraseña.</p>
-                    </div>
-                    <div class="border-l-4 border-emerald-500 pl-4">
-                        <h3 class="text-lg font-medium text-slate-700">¿Puedo acceder desde dispositivos móviles?</h3>
-                        <p class="text-slate-600 mt-2">Sí, el sistema es responsive y funciona en tablets y smartphones.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+    <!-- Sección 2 -->
+    <div class="section-card" data-section="2">
+      <h2 class="section-title">2. Cómo usar la función X</h2>
+      <div class="image-container">
+        <img src="../static/img/inicio2.png" alt="Ejemplo de uso de función X" class="manual-image">
+      </div>
+      <p class="section-content">
+        Ese login corresponde a la aplicación BioHub. Presenta un diseño sencillo y minimalista con dos pestañas
+        principales: Registrarse e Iniciar Sesión.
+        En la vista mostrada, se encuentra el formulario de inicio de sesión que incluye campos para correo electrónico
+        y contraseña, con la opción de mostrar/ocultar la clave. Además, dispone de un enlace para recuperar la
+        contraseña olvidada y un botón destacado en verde claro para "Iniciar Sesión".
+        <br><br>
+      </p>
+    </div>
+
+    <!-- Sección 3 -->
+    <div class="section-card" data-section="3">
+      <h2 class="section-title">3. Configuración</h2>
+      <div class="image-container">
+        <img src="../static/img/inicio3.png" alt="Menú de configuración" class="manual-image">
+      </div>
+      <p class="section-content">
+        La pantalla de registro de la aplicación BioHub permite a los nuevos usuarios crear una cuenta de forma rápida y
+        organizada.
+        Incluye campos para ingresar nombre, apellidos, correo electrónico, teléfono, contraseña y rol, asegurando una
+        personalización del perfil. Además, especifica que la contraseña debe tener un mínimo de 8 caracteres e incluir
+        mayúsculas, minúsculas, números o caracteres especiales, garantizando mayor seguridad.
+
+        También cuenta con una casilla de verificación para aceptar los términos y condiciones, requisito esencial antes
+        de continuar. Finalmente, se presenta un botón verde claro con la opción “Siguiente” que guía al usuario al
+        próximo paso del registro.
+      </p>
+    </div>
+
+    <!-- Navegación -->
+    <div class="navigation">
+      <button id="prevBtn" class="nav-btn prev-btn">← Anterior</button>
+      <div class="section-indicator">
+        <span class="current-section">1</span> / <span class="total-sections">3</span>
+      </div>
+      <button id="nextBtn" class="nav-btn next-btn">Siguiente →</button>
+    </div>
+  </div>
+
+  <script src="../static/js/usuario.js"></script>
+</body>
 </body>
 </html>
